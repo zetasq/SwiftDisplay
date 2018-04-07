@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D471E4312079AB9D00745442 /* ObjectDescriptionHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D471E4302079AB9D00745442 /* ObjectDescriptionHelpers.swift */; };
+		D471E4362079ECA400745442 /* WeakLayoutElementToRectMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D471E4352079ECA400745442 /* WeakLayoutElementToRectMap.swift */; };
+		D4B4A9E22078D50F00A18EE3 /* LayoutElementExtensibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B4A9E12078D50F00A18EE3 /* LayoutElementExtensibility.swift */; };
+		D4B4A9E42078DCF000A18EE3 /* LayoutElementAsciiArtProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B4A9E32078DCF000A18EE3 /* LayoutElementAsciiArtProtocol.swift */; };
+		D4B4A9E62079128100A18EE3 /* LayoutElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B4A9E52079128100A18EE3 /* LayoutElement.swift */; };
+		D4B4A9E8207A4A4600A18EE3 /* CoreGraphics+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B4A9E7207A4A4600A18EE3 /* CoreGraphics+Util.swift */; };
+		D4B4A9EB207A510600A18EE3 /* InternalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B4A9EA207A510600A18EE3 /* InternalHelpers.swift */; };
 		D4FF147E2077A671002AF70D /* SwiftDisplay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4FF14742077A671002AF70D /* SwiftDisplay.framework */; };
 		D4FF14832077A671002AF70D /* SwiftDisplayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FF14822077A671002AF70D /* SwiftDisplayTests.swift */; };
 		D4FF14852077A671002AF70D /* SwiftDisplay.h in Headers */ = {isa = PBXBuildFile; fileRef = D4FF14772077A671002AF70D /* SwiftDisplay.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -22,6 +29,14 @@
 		D4FF14BB2077A7FE002AF70D /* Elkon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4FF14B32077A788002AF70D /* Elkon.framework */; };
 		D4FF14BD2077A81C002AF70D /* SwiftCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4FF14BC2077A81C002AF70D /* SwiftCache.framework */; };
 		D4FF14BF2077A825002AF70D /* CWebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4FF14BE2077A825002AF70D /* CWebP.framework */; };
+		D4FF14C32077B955002AF70D /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FF14C22077B955002AF70D /* Layout.swift */; };
+		D4FF14C52077BFDB002AF70D /* Dimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FF14C42077BFDB002AF70D /* Dimension.swift */; };
+		D4FF14C7207858D1002AF70D /* CGRect+Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FF14C6207858D1002AF70D /* CGRect+Validation.swift */; };
+		D4FF14C920785A32002AF70D /* LayoutSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FF14C820785A32002AF70D /* LayoutSize.swift */; };
+		D4FF14CB20785A6E002AF70D /* SizeRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FF14CA20785A6E002AF70D /* SizeRange.swift */; };
+		D4FF14CD20785A91002AF70D /* LayoutElementSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FF14CC20785A91002AF70D /* LayoutElementSize.swift */; };
+		D4FF14CF20787300002AF70D /* AbsoluteLayoutElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FF14CE20787300002AF70D /* AbsoluteLayoutElement.swift */; };
+		D4FF14D12078AF74002AF70D /* AbsoluteLayoutSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FF14D02078AF74002AF70D /* AbsoluteLayoutSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +78,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D471E4302079AB9D00745442 /* ObjectDescriptionHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDescriptionHelpers.swift; sourceTree = "<group>"; };
+		D471E4352079ECA400745442 /* WeakLayoutElementToRectMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakLayoutElementToRectMap.swift; sourceTree = "<group>"; };
+		D4B4A9E12078D50F00A18EE3 /* LayoutElementExtensibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutElementExtensibility.swift; sourceTree = "<group>"; };
+		D4B4A9E32078DCF000A18EE3 /* LayoutElementAsciiArtProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutElementAsciiArtProtocol.swift; sourceTree = "<group>"; };
+		D4B4A9E52079128100A18EE3 /* LayoutElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutElement.swift; sourceTree = "<group>"; };
+		D4B4A9E7207A4A4600A18EE3 /* CoreGraphics+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreGraphics+Util.swift"; sourceTree = "<group>"; };
+		D4B4A9EA207A510600A18EE3 /* InternalHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalHelpers.swift; sourceTree = "<group>"; };
 		D4FF14742077A671002AF70D /* SwiftDisplay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftDisplay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4FF14772077A671002AF70D /* SwiftDisplay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftDisplay.h; sourceTree = "<group>"; };
 		D4FF14782077A671002AF70D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -82,6 +104,14 @@
 		D4FF14B32077A788002AF70D /* Elkon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Elkon.framework; path = Carthage/Build/iOS/Elkon.framework; sourceTree = "<group>"; };
 		D4FF14BC2077A81C002AF70D /* SwiftCache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftCache.framework; path = Carthage/Build/iOS/SwiftCache.framework; sourceTree = "<group>"; };
 		D4FF14BE2077A825002AF70D /* CWebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CWebP.framework; path = Carthage/Build/iOS/CWebP.framework; sourceTree = "<group>"; };
+		D4FF14C22077B955002AF70D /* Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
+		D4FF14C42077BFDB002AF70D /* Dimension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dimension.swift; sourceTree = "<group>"; };
+		D4FF14C6207858D1002AF70D /* CGRect+Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Validation.swift"; sourceTree = "<group>"; };
+		D4FF14C820785A32002AF70D /* LayoutSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutSize.swift; sourceTree = "<group>"; };
+		D4FF14CA20785A6E002AF70D /* SizeRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeRange.swift; sourceTree = "<group>"; };
+		D4FF14CC20785A91002AF70D /* LayoutElementSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutElementSize.swift; sourceTree = "<group>"; };
+		D4FF14CE20787300002AF70D /* AbsoluteLayoutElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsoluteLayoutElement.swift; sourceTree = "<group>"; };
+		D4FF14D02078AF74002AF70D /* AbsoluteLayoutSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsoluteLayoutSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +152,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D4B4A9E9207A50FA00A18EE3 /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				D4B4A9EA207A510600A18EE3 /* InternalHelpers.swift */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		D4C1EF9E207A70F60005516A /* DataStructure */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataStructure;
+			sourceTree = "<group>";
+		};
 		D4FF146A2077A671002AF70D = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +195,9 @@
 			children = (
 				D4FF14772077A671002AF70D /* SwiftDisplay.h */,
 				D4FF14782077A671002AF70D /* Info.plist */,
+				D4C1EF9E207A70F60005516A /* DataStructure */,
+				D4B4A9E9207A50FA00A18EE3 /* Private */,
+				D4FF14C12077B941002AF70D /* Layout */,
 			);
 			path = SwiftDisplay;
 			sourceTree = "<group>";
@@ -193,6 +241,27 @@
 				D4FF14B32077A788002AF70D /* Elkon.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4FF14C12077B941002AF70D /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				D4FF14C6207858D1002AF70D /* CGRect+Validation.swift */,
+				D4B4A9E7207A4A4600A18EE3 /* CoreGraphics+Util.swift */,
+				D4FF14C42077BFDB002AF70D /* Dimension.swift */,
+				D4FF14C820785A32002AF70D /* LayoutSize.swift */,
+				D4FF14CA20785A6E002AF70D /* SizeRange.swift */,
+				D4FF14CC20785A91002AF70D /* LayoutElementSize.swift */,
+				D4FF14CE20787300002AF70D /* AbsoluteLayoutElement.swift */,
+				D4B4A9E12078D50F00A18EE3 /* LayoutElementExtensibility.swift */,
+				D4B4A9E32078DCF000A18EE3 /* LayoutElementAsciiArtProtocol.swift */,
+				D471E4302079AB9D00745442 /* ObjectDescriptionHelpers.swift */,
+				D4B4A9E52079128100A18EE3 /* LayoutElement.swift */,
+				D4FF14D02078AF74002AF70D /* AbsoluteLayoutSpec.swift */,
+				D471E4352079ECA400745442 /* WeakLayoutElementToRectMap.swift */,
+				D4FF14C22077B955002AF70D /* Layout.swift */,
+			);
+			path = Layout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,6 +364,7 @@
 				TargetAttributes = {
 					D4FF14732077A671002AF70D = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 					D4FF147C2077A671002AF70D = {
 						CreatedOnToolsVersion = 9.3;
@@ -390,6 +460,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4B4A9EB207A510600A18EE3 /* InternalHelpers.swift in Sources */,
+				D4B4A9E42078DCF000A18EE3 /* LayoutElementAsciiArtProtocol.swift in Sources */,
+				D4B4A9E8207A4A4600A18EE3 /* CoreGraphics+Util.swift in Sources */,
+				D471E4362079ECA400745442 /* WeakLayoutElementToRectMap.swift in Sources */,
+				D4FF14C920785A32002AF70D /* LayoutSize.swift in Sources */,
+				D4B4A9E62079128100A18EE3 /* LayoutElement.swift in Sources */,
+				D4FF14CD20785A91002AF70D /* LayoutElementSize.swift in Sources */,
+				D4FF14C52077BFDB002AF70D /* Dimension.swift in Sources */,
+				D4B4A9E22078D50F00A18EE3 /* LayoutElementExtensibility.swift in Sources */,
+				D4FF14D12078AF74002AF70D /* AbsoluteLayoutSpec.swift in Sources */,
+				D4FF14CF20787300002AF70D /* AbsoluteLayoutElement.swift in Sources */,
+				D4FF14C7207858D1002AF70D /* CGRect+Validation.swift in Sources */,
+				D4FF14CB20785A6E002AF70D /* SizeRange.swift in Sources */,
+				D4FF14C32077B955002AF70D /* Layout.swift in Sources */,
+				D471E4312079AB9D00745442 /* ObjectDescriptionHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -581,6 +666,7 @@
 		D4FF14892077A671002AF70D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -602,6 +688,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zetasq.SwiftDisplay;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -610,6 +697,7 @@
 		D4FF148A2077A671002AF70D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -639,6 +727,7 @@
 		D4FF148C2077A671002AF70D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DHNJ8N28ZZ;
 				INFOPLIST_FILE = SwiftDisplayTests/Info.plist;
@@ -657,6 +746,7 @@
 		D4FF148D2077A671002AF70D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DHNJ8N28ZZ;
 				INFOPLIST_FILE = SwiftDisplayTests/Info.plist;
@@ -675,6 +765,7 @@
 		D4FF14AD2077A76D002AF70D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DHNJ8N28ZZ;
@@ -697,6 +788,7 @@
 		D4FF14AE2077A76D002AF70D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DHNJ8N28ZZ;
