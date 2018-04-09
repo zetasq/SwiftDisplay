@@ -9,11 +9,19 @@
 /* Begin PBXBuildFile section */
 		D471E4312079AB9D00745442 /* ObjectDescriptionHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D471E4302079AB9D00745442 /* ObjectDescriptionHelpers.swift */; };
 		D471E4362079ECA400745442 /* WeakLayoutElementToRectMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D471E4352079ECA400745442 /* WeakLayoutElementToRectMap.swift */; };
+		D471E449207AF43800745442 /* TraitCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D471E448207AF43800745442 /* TraitCollection.swift */; };
+		D471E44B207B045500745442 /* StackLayoutElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D471E44A207B045500745442 /* StackLayoutElement.swift */; };
+		D471E44D207B051A00745442 /* StackLayoutDefines.swift in Sources */ = {isa = PBXBuildFile; fileRef = D471E44C207B051A00745442 /* StackLayoutDefines.swift */; };
 		D4B4A9E22078D50F00A18EE3 /* LayoutElementExtensibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B4A9E12078D50F00A18EE3 /* LayoutElementExtensibility.swift */; };
 		D4B4A9E42078DCF000A18EE3 /* LayoutElementAsciiArtProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B4A9E32078DCF000A18EE3 /* LayoutElementAsciiArtProtocol.swift */; };
 		D4B4A9E62079128100A18EE3 /* LayoutElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B4A9E52079128100A18EE3 /* LayoutElement.swift */; };
 		D4B4A9E8207A4A4600A18EE3 /* CoreGraphics+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B4A9E7207A4A4600A18EE3 /* CoreGraphics+Util.swift */; };
 		D4B4A9EB207A510600A18EE3 /* InternalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B4A9EA207A510600A18EE3 /* InternalHelpers.swift */; };
+		D4C1EFA2207BA7910005516A /* LayoutElementStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C1EFA1207BA7910005516A /* LayoutElementStyle.swift */; };
+		D4C1EFA4207BAF0A0005516A /* LayoutElementStyleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C1EFA3207BAF0A0005516A /* LayoutElementStyleExtensions.swift */; };
+		D4C1EFA6207BB0DC0005516A /* LayoutElementContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C1EFA5207BB0DC0005516A /* LayoutElementContext.swift */; };
+		D4C1EFA9207BBD820005516A /* Lock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C1EFA8207BBD820005516A /* Lock.swift */; };
+		D4C1EFAB207BBDFE0005516A /* Atomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C1EFAA207BBDFE0005516A /* Atomic.swift */; };
 		D4FF147E2077A671002AF70D /* SwiftDisplay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4FF14742077A671002AF70D /* SwiftDisplay.framework */; };
 		D4FF14832077A671002AF70D /* SwiftDisplayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FF14822077A671002AF70D /* SwiftDisplayTests.swift */; };
 		D4FF14852077A671002AF70D /* SwiftDisplay.h in Headers */ = {isa = PBXBuildFile; fileRef = D4FF14772077A671002AF70D /* SwiftDisplay.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -80,11 +88,19 @@
 /* Begin PBXFileReference section */
 		D471E4302079AB9D00745442 /* ObjectDescriptionHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDescriptionHelpers.swift; sourceTree = "<group>"; };
 		D471E4352079ECA400745442 /* WeakLayoutElementToRectMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakLayoutElementToRectMap.swift; sourceTree = "<group>"; };
+		D471E448207AF43800745442 /* TraitCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraitCollection.swift; sourceTree = "<group>"; };
+		D471E44A207B045500745442 /* StackLayoutElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackLayoutElement.swift; sourceTree = "<group>"; };
+		D471E44C207B051A00745442 /* StackLayoutDefines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackLayoutDefines.swift; sourceTree = "<group>"; };
 		D4B4A9E12078D50F00A18EE3 /* LayoutElementExtensibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutElementExtensibility.swift; sourceTree = "<group>"; };
 		D4B4A9E32078DCF000A18EE3 /* LayoutElementAsciiArtProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutElementAsciiArtProtocol.swift; sourceTree = "<group>"; };
 		D4B4A9E52079128100A18EE3 /* LayoutElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutElement.swift; sourceTree = "<group>"; };
 		D4B4A9E7207A4A4600A18EE3 /* CoreGraphics+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreGraphics+Util.swift"; sourceTree = "<group>"; };
 		D4B4A9EA207A510600A18EE3 /* InternalHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalHelpers.swift; sourceTree = "<group>"; };
+		D4C1EFA1207BA7910005516A /* LayoutElementStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutElementStyle.swift; sourceTree = "<group>"; };
+		D4C1EFA3207BAF0A0005516A /* LayoutElementStyleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutElementStyleExtensions.swift; sourceTree = "<group>"; };
+		D4C1EFA5207BB0DC0005516A /* LayoutElementContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutElementContext.swift; sourceTree = "<group>"; };
+		D4C1EFA8207BBD820005516A /* Lock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lock.swift; sourceTree = "<group>"; };
+		D4C1EFAA207BBDFE0005516A /* Atomic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atomic.swift; sourceTree = "<group>"; };
 		D4FF14742077A671002AF70D /* SwiftDisplay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftDisplay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4FF14772077A671002AF70D /* SwiftDisplay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftDisplay.h; sourceTree = "<group>"; };
 		D4FF14782077A671002AF70D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -152,6 +168,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D471E447207AF42600745442 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				D471E448207AF43800745442 /* TraitCollection.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 		D4B4A9E9207A50FA00A18EE3 /* Private */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +189,15 @@
 			children = (
 			);
 			path = DataStructure;
+			sourceTree = "<group>";
+		};
+		D4C1EFA7207BBD6F0005516A /* Thread */ = {
+			isa = PBXGroup;
+			children = (
+				D4C1EFA8207BBD820005516A /* Lock.swift */,
+				D4C1EFAA207BBDFE0005516A /* Atomic.swift */,
+			);
+			path = Thread;
 			sourceTree = "<group>";
 		};
 		D4FF146A2077A671002AF70D = {
@@ -195,9 +228,11 @@
 			children = (
 				D4FF14772077A671002AF70D /* SwiftDisplay.h */,
 				D4FF14782077A671002AF70D /* Info.plist */,
+				D4C1EFA7207BBD6F0005516A /* Thread */,
 				D4C1EF9E207A70F60005516A /* DataStructure */,
 				D4B4A9E9207A50FA00A18EE3 /* Private */,
 				D4FF14C12077B941002AF70D /* Layout */,
+				D471E447207AF42600745442 /* Detail */,
 			);
 			path = SwiftDisplay;
 			sourceTree = "<group>";
@@ -254,12 +289,17 @@
 				D4FF14CC20785A91002AF70D /* LayoutElementSize.swift */,
 				D4FF14CE20787300002AF70D /* AbsoluteLayoutElement.swift */,
 				D4B4A9E12078D50F00A18EE3 /* LayoutElementExtensibility.swift */,
+				D4C1EFA3207BAF0A0005516A /* LayoutElementStyleExtensions.swift */,
 				D4B4A9E32078DCF000A18EE3 /* LayoutElementAsciiArtProtocol.swift */,
 				D471E4302079AB9D00745442 /* ObjectDescriptionHelpers.swift */,
+				D4FF14C22077B955002AF70D /* Layout.swift */,
 				D4B4A9E52079128100A18EE3 /* LayoutElement.swift */,
+				D4C1EFA5207BB0DC0005516A /* LayoutElementContext.swift */,
+				D4C1EFA1207BA7910005516A /* LayoutElementStyle.swift */,
+				D471E44C207B051A00745442 /* StackLayoutDefines.swift */,
+				D471E44A207B045500745442 /* StackLayoutElement.swift */,
 				D4FF14D02078AF74002AF70D /* AbsoluteLayoutSpec.swift */,
 				D471E4352079ECA400745442 /* WeakLayoutElementToRectMap.swift */,
-				D4FF14C22077B955002AF70D /* Layout.swift */,
 			);
 			path = Layout;
 			sourceTree = "<group>";
@@ -460,21 +500,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D471E449207AF43800745442 /* TraitCollection.swift in Sources */,
 				D4B4A9EB207A510600A18EE3 /* InternalHelpers.swift in Sources */,
 				D4B4A9E42078DCF000A18EE3 /* LayoutElementAsciiArtProtocol.swift in Sources */,
 				D4B4A9E8207A4A4600A18EE3 /* CoreGraphics+Util.swift in Sources */,
 				D471E4362079ECA400745442 /* WeakLayoutElementToRectMap.swift in Sources */,
+				D471E44D207B051A00745442 /* StackLayoutDefines.swift in Sources */,
+				D4C1EFA9207BBD820005516A /* Lock.swift in Sources */,
 				D4FF14C920785A32002AF70D /* LayoutSize.swift in Sources */,
+				D4C1EFA6207BB0DC0005516A /* LayoutElementContext.swift in Sources */,
+				D4C1EFA2207BA7910005516A /* LayoutElementStyle.swift in Sources */,
 				D4B4A9E62079128100A18EE3 /* LayoutElement.swift in Sources */,
 				D4FF14CD20785A91002AF70D /* LayoutElementSize.swift in Sources */,
 				D4FF14C52077BFDB002AF70D /* Dimension.swift in Sources */,
 				D4B4A9E22078D50F00A18EE3 /* LayoutElementExtensibility.swift in Sources */,
 				D4FF14D12078AF74002AF70D /* AbsoluteLayoutSpec.swift in Sources */,
 				D4FF14CF20787300002AF70D /* AbsoluteLayoutElement.swift in Sources */,
+				D471E44B207B045500745442 /* StackLayoutElement.swift in Sources */,
 				D4FF14C7207858D1002AF70D /* CGRect+Validation.swift in Sources */,
 				D4FF14CB20785A6E002AF70D /* SizeRange.swift in Sources */,
 				D4FF14C32077B955002AF70D /* Layout.swift in Sources */,
+				D4C1EFA4207BAF0A0005516A /* LayoutElementStyleExtensions.swift in Sources */,
 				D471E4312079AB9D00745442 /* ObjectDescriptionHelpers.swift in Sources */,
+				D4C1EFAB207BBDFE0005516A /* Atomic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

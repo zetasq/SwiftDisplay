@@ -26,3 +26,31 @@ protocol LayoutElementExtensibility {
   func layoutOptionExtensionEdgeInsets(atIndex index: Int) -> UIEdgeInsets
   
 }
+
+extension LayoutElementExtensibility where Self: LayoutElement {
+  
+  func setLayoutOptionExtensionBool(_ value: Bool, atIndex index: Int) {
+    self.style.setLayoutOptionExtensionBool(value, atIndex: index)
+  }
+  
+  func layoutOptionExtensionBool(atIndex index: Int) -> Bool {
+    return self.style.layoutOptionExtensionBool(atIndex: index)
+  }
+  
+  func setLayoutOptionExtensionInteger(_ value: Int, atIndex index: Int) {
+    self.style.setLayoutOptionExtensionInteger(value, atIndex: index)
+  }
+  
+  func layoutOptionExtensionInteger(atIndex index: Int) -> Int {
+    return self.style.layoutOptionExtensionInteger(atIndex: index)
+  }
+  
+  func setLayoutOptionExtensionEdgeInsets(_ value: UIEdgeInsets, atIndex index: Int) {
+    self.style.setLayoutOptionExtensionEdgeInsets(value, atIndex: index)
+  }
+  
+  func layoutOptionExtensionEdgeInsets(atIndex index: Int) -> UIEdgeInsets {
+    return self.style.layoutOptionExtensionEdgeInsets(atIndex: index)
+  }
+  
+}
