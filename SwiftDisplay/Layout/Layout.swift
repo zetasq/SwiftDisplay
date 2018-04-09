@@ -49,7 +49,7 @@ final class Layout {
    *
    * @discussion When being used as a sublayout, this property must not be nil.
    */
-  let position: CGPoint?
+  var position: CGPoint?
   
   /**
    * Array of ASLayouts. Each must have a valid non-nil position.
@@ -107,8 +107,8 @@ final class Layout {
    */
   init(layoutElement: LayoutElement,
        size: CGSize,
-       position: CGPoint?,
-       sublayouts: [Layout]) {
+       position: CGPoint? = nil,
+       sublayouts: [Layout] = []) {
     for sublayout in sublayouts {
       assert(sublayout.position != nil, "Nil position is not allowed in sublayout.")
     }

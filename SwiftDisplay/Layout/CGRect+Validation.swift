@@ -14,7 +14,7 @@ extension CGFloat {
     return (self.isNormal || self == 0) && self < .greatestFiniteMagnitude / 2
   }
   
-  var isNonnegativeAndValidForLayout: Bool {
+  var isValidForSize: Bool {
     return self.isValidForLayout && self >= 0
   }
   
@@ -23,8 +23,8 @@ extension CGFloat {
 extension CGSize {
   
   var isValidForLayout: Bool {
-    return self.width.isNonnegativeAndValidForLayout
-      && self.height.isNonnegativeAndValidForLayout
+    return self.width.isValidForSize
+      && self.height.isValidForSize
   }
   
 }

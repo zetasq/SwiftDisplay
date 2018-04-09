@@ -22,6 +22,15 @@
 		D4C1EFA6207BB0DC0005516A /* LayoutElementContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C1EFA5207BB0DC0005516A /* LayoutElementContext.swift */; };
 		D4C1EFA9207BBD820005516A /* Lock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C1EFA8207BBD820005516A /* Lock.swift */; };
 		D4C1EFAB207BBDFE0005516A /* Atomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C1EFAA207BBDFE0005516A /* Atomic.swift */; };
+		D4C1EFAD207C2E6A0005516A /* LayoutSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C1EFAC207C2E6A0005516A /* LayoutSpec.swift */; };
+		D4C1EFAF207C334F0005516A /* WrapperLayoutSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C1EFAE207C334F0005516A /* WrapperLayoutSpec.swift */; };
+		D4E40FB6207FB03800AC9F30 /* BackgroundLayoutSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E40FB5207FB03800AC9F30 /* BackgroundLayoutSpec.swift */; };
+		D4E40FBC2080DAE800AC9F30 /* RelativeLayoutSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E40FBB2080DAE800AC9F30 /* RelativeLayoutSpec.swift */; };
+		D4E40FBE20816D3500AC9F30 /* CornerLayoutSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E40FBD20816D3500AC9F30 /* CornerLayoutSpec.swift */; };
+		D4E40FC02081997500AC9F30 /* InsetLayoutSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E40FBF2081997500AC9F30 /* InsetLayoutSpec.swift */; };
+		D4E410282081AE7D00AC9F30 /* OverlayLayoutSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E410272081AE7C00AC9F30 /* OverlayLayoutSpec.swift */; };
+		D4E4105D2081FC2B00AC9F30 /* RatioLayoutSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E4105C2081FC2B00AC9F30 /* RatioLayoutSpec.swift */; };
+		D4E4105F2082098600AC9F30 /* StackLayoutSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E4105E2082098600AC9F30 /* StackLayoutSpec.swift */; };
 		D4FF147E2077A671002AF70D /* SwiftDisplay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4FF14742077A671002AF70D /* SwiftDisplay.framework */; };
 		D4FF14832077A671002AF70D /* SwiftDisplayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FF14822077A671002AF70D /* SwiftDisplayTests.swift */; };
 		D4FF14852077A671002AF70D /* SwiftDisplay.h in Headers */ = {isa = PBXBuildFile; fileRef = D4FF14772077A671002AF70D /* SwiftDisplay.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -101,6 +110,15 @@
 		D4C1EFA5207BB0DC0005516A /* LayoutElementContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutElementContext.swift; sourceTree = "<group>"; };
 		D4C1EFA8207BBD820005516A /* Lock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lock.swift; sourceTree = "<group>"; };
 		D4C1EFAA207BBDFE0005516A /* Atomic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atomic.swift; sourceTree = "<group>"; };
+		D4C1EFAC207C2E6A0005516A /* LayoutSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutSpec.swift; sourceTree = "<group>"; };
+		D4C1EFAE207C334F0005516A /* WrapperLayoutSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrapperLayoutSpec.swift; sourceTree = "<group>"; };
+		D4E40FB5207FB03800AC9F30 /* BackgroundLayoutSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundLayoutSpec.swift; sourceTree = "<group>"; };
+		D4E40FBB2080DAE800AC9F30 /* RelativeLayoutSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelativeLayoutSpec.swift; sourceTree = "<group>"; };
+		D4E40FBD20816D3500AC9F30 /* CornerLayoutSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerLayoutSpec.swift; sourceTree = "<group>"; };
+		D4E40FBF2081997500AC9F30 /* InsetLayoutSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetLayoutSpec.swift; sourceTree = "<group>"; };
+		D4E410272081AE7C00AC9F30 /* OverlayLayoutSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayLayoutSpec.swift; sourceTree = "<group>"; };
+		D4E4105C2081FC2B00AC9F30 /* RatioLayoutSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatioLayoutSpec.swift; sourceTree = "<group>"; };
+		D4E4105E2082098600AC9F30 /* StackLayoutSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackLayoutSpec.swift; sourceTree = "<group>"; };
 		D4FF14742077A671002AF70D /* SwiftDisplay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftDisplay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4FF14772077A671002AF70D /* SwiftDisplay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftDisplay.h; sourceTree = "<group>"; };
 		D4FF14782077A671002AF70D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -198,6 +216,23 @@
 				D4C1EFAA207BBDFE0005516A /* Atomic.swift */,
 			);
 			path = Thread;
+			sourceTree = "<group>";
+		};
+		D4E40FB4207FA84300AC9F30 /* LayoutSpec */ = {
+			isa = PBXGroup;
+			children = (
+				D4C1EFAC207C2E6A0005516A /* LayoutSpec.swift */,
+				D4C1EFAE207C334F0005516A /* WrapperLayoutSpec.swift */,
+				D4FF14D02078AF74002AF70D /* AbsoluteLayoutSpec.swift */,
+				D4E40FB5207FB03800AC9F30 /* BackgroundLayoutSpec.swift */,
+				D4E40FBB2080DAE800AC9F30 /* RelativeLayoutSpec.swift */,
+				D4E40FBD20816D3500AC9F30 /* CornerLayoutSpec.swift */,
+				D4E40FBF2081997500AC9F30 /* InsetLayoutSpec.swift */,
+				D4E410272081AE7C00AC9F30 /* OverlayLayoutSpec.swift */,
+				D4E4105C2081FC2B00AC9F30 /* RatioLayoutSpec.swift */,
+				D4E4105E2082098600AC9F30 /* StackLayoutSpec.swift */,
+			);
+			path = LayoutSpec;
 			sourceTree = "<group>";
 		};
 		D4FF146A2077A671002AF70D = {
@@ -298,7 +333,7 @@
 				D4C1EFA1207BA7910005516A /* LayoutElementStyle.swift */,
 				D471E44C207B051A00745442 /* StackLayoutDefines.swift */,
 				D471E44A207B045500745442 /* StackLayoutElement.swift */,
-				D4FF14D02078AF74002AF70D /* AbsoluteLayoutSpec.swift */,
+				D4E40FB4207FA84300AC9F30 /* LayoutSpec */,
 				D471E4352079ECA400745442 /* WeakLayoutElementToRectMap.swift */,
 			);
 			path = Layout;
@@ -504,22 +539,31 @@
 				D4B4A9EB207A510600A18EE3 /* InternalHelpers.swift in Sources */,
 				D4B4A9E42078DCF000A18EE3 /* LayoutElementAsciiArtProtocol.swift in Sources */,
 				D4B4A9E8207A4A4600A18EE3 /* CoreGraphics+Util.swift in Sources */,
+				D4E40FBC2080DAE800AC9F30 /* RelativeLayoutSpec.swift in Sources */,
 				D471E4362079ECA400745442 /* WeakLayoutElementToRectMap.swift in Sources */,
 				D471E44D207B051A00745442 /* StackLayoutDefines.swift in Sources */,
+				D4E40FC02081997500AC9F30 /* InsetLayoutSpec.swift in Sources */,
+				D4E40FBE20816D3500AC9F30 /* CornerLayoutSpec.swift in Sources */,
 				D4C1EFA9207BBD820005516A /* Lock.swift in Sources */,
 				D4FF14C920785A32002AF70D /* LayoutSize.swift in Sources */,
 				D4C1EFA6207BB0DC0005516A /* LayoutElementContext.swift in Sources */,
 				D4C1EFA2207BA7910005516A /* LayoutElementStyle.swift in Sources */,
 				D4B4A9E62079128100A18EE3 /* LayoutElement.swift in Sources */,
 				D4FF14CD20785A91002AF70D /* LayoutElementSize.swift in Sources */,
+				D4E4105F2082098600AC9F30 /* StackLayoutSpec.swift in Sources */,
 				D4FF14C52077BFDB002AF70D /* Dimension.swift in Sources */,
 				D4B4A9E22078D50F00A18EE3 /* LayoutElementExtensibility.swift in Sources */,
+				D4E4105D2081FC2B00AC9F30 /* RatioLayoutSpec.swift in Sources */,
+				D4E40FB6207FB03800AC9F30 /* BackgroundLayoutSpec.swift in Sources */,
 				D4FF14D12078AF74002AF70D /* AbsoluteLayoutSpec.swift in Sources */,
 				D4FF14CF20787300002AF70D /* AbsoluteLayoutElement.swift in Sources */,
 				D471E44B207B045500745442 /* StackLayoutElement.swift in Sources */,
 				D4FF14C7207858D1002AF70D /* CGRect+Validation.swift in Sources */,
+				D4C1EFAF207C334F0005516A /* WrapperLayoutSpec.swift in Sources */,
 				D4FF14CB20785A6E002AF70D /* SizeRange.swift in Sources */,
 				D4FF14C32077B955002AF70D /* Layout.swift in Sources */,
+				D4E410282081AE7D00AC9F30 /* OverlayLayoutSpec.swift in Sources */,
+				D4C1EFAD207C2E6A0005516A /* LayoutSpec.swift in Sources */,
 				D4C1EFA4207BAF0A0005516A /* LayoutElementStyleExtensions.swift in Sources */,
 				D471E4312079AB9D00745442 /* ObjectDescriptionHelpers.swift in Sources */,
 				D4C1EFAB207BBDFE0005516A /* Atomic.swift in Sources */,
