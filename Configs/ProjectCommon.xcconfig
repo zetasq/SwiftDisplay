@@ -1,0 +1,20 @@
+//
+//  ProjectCommon.xcconfig
+//  SwiftStyle
+//
+//  Created by Zhu Shengqi on 2018/7/29.
+//  Copyright © 2018 Zhu Shengqi. All rights reserved.
+//
+
+SDKROOT = iphoneos
+
+SUPPORTED_PLATFORMS = iphonesimulator iphoneos
+
+VALID_ARCHS[sdk=iphoneos*]             = arm64 armv7 armv7s
+VALID_ARCHS[sdk=iphonesimulator*]      = i386 x86_64
+
+IPHONEOS_DEPLOYMENT_TARGET = 11.4
+
+// iOS-specific default settings
+TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]  = 1,2
+TARGETED_DEVICE_FAMILY[sdk=iphone*]           = 1,2
