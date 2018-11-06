@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1010"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D4FF14912077A76C002AF70D"
-               BuildableName = "iOSDemo.app"
-               BlueprintName = "iOSDemo"
+               BlueprintIdentifier = "D4166E26218EED960053DA26"
+               BuildableName = "iOS-Demo.app"
+               BlueprintName = "iOS-Demo"
                ReferencedContainer = "container:SwiftDisplay.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,23 +28,13 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D4FF14A42077A76D002AF70D"
-               BuildableName = "iOSDemoTests.xctest"
-               BlueprintName = "iOSDemoTests"
-               ReferencedContainer = "container:SwiftDisplay.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D4FF14912077A76C002AF70D"
-            BuildableName = "iOSDemo.app"
-            BlueprintName = "iOSDemo"
+            BlueprintIdentifier = "D4166E26218EED960053DA26"
+            BuildableName = "iOS-Demo.app"
+            BlueprintName = "iOS-Demo"
             ReferencedContainer = "container:SwiftDisplay.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -65,9 +55,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D4FF14912077A76C002AF70D"
-            BuildableName = "iOSDemo.app"
-            BlueprintName = "iOSDemo"
+            BlueprintIdentifier = "D4166E26218EED960053DA26"
+            BuildableName = "iOS-Demo.app"
+            BlueprintName = "iOS-Demo"
             ReferencedContainer = "container:SwiftDisplay.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -84,9 +74,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D4FF14912077A76C002AF70D"
-            BuildableName = "iOSDemo.app"
-            BlueprintName = "iOSDemo"
+            BlueprintIdentifier = "D4166E26218EED960053DA26"
+            BuildableName = "iOS-Demo.app"
+            BlueprintName = "iOS-Demo"
             ReferencedContainer = "container:SwiftDisplay.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
