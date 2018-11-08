@@ -12,6 +12,9 @@
 		D4166E31218EED980053DA26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4166E30218EED980053DA26 /* Assets.xcassets */; };
 		D4166E34218EED980053DA26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4166E32218EED980053DA26 /* LaunchScreen.storyboard */; };
 		D4166E3E2191E5C80053DA26 /* _AsyncTransactionQueuePool.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4166E3D2191E5C80053DA26 /* _AsyncTransactionQueuePool.swift */; };
+		D4166E4121933E580053DA26 /* InterfaceState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4166E4021933E580053DA26 /* InterfaceState.swift */; };
+		D4166E4321933E650053DA26 /* DisplayNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4166E4221933E650053DA26 /* DisplayNode.swift */; };
+		D4166E45219346650053DA26 /* DisplayNode+Subtypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4166E44219346650053DA26 /* DisplayNode+Subtypes.swift */; };
 		D41AAA3121874EDE00B23325 /* _AsyncTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41AAA3021874EDE00B23325 /* _AsyncTransaction.swift */; };
 		D41AAA332187563B00B23325 /* _AsyncTransactionOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41AAA322187563B00B23325 /* _AsyncTransactionOperation.swift */; };
 		D41AAA3621875B3300B23325 /* Assert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41AAA3521875B3300B23325 /* Assert.swift */; };
@@ -76,6 +79,9 @@
 		D4166E33218EED980053DA26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D4166E35218EED980053DA26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4166E3D2191E5C80053DA26 /* _AsyncTransactionQueuePool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _AsyncTransactionQueuePool.swift; sourceTree = "<group>"; };
+		D4166E4021933E580053DA26 /* InterfaceState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceState.swift; sourceTree = "<group>"; };
+		D4166E4221933E650053DA26 /* DisplayNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayNode.swift; sourceTree = "<group>"; };
+		D4166E44219346650053DA26 /* DisplayNode+Subtypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DisplayNode+Subtypes.swift"; sourceTree = "<group>"; };
 		D41AAA2B218749B200B23325 /* TargetCommon.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = TargetCommon.xcconfig; sourceTree = "<group>"; };
 		D41AAA2C218749B300B23325 /* Test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
 		D41AAA2D218749B300B23325 /* Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Framework.xcconfig; sourceTree = "<group>"; };
@@ -170,6 +176,16 @@
 			path = "iOS-Demo";
 			sourceTree = "<group>";
 		};
+		D4166E3F21933E3D0053DA26 /* DisplayNode */ = {
+			isa = PBXGroup;
+			children = (
+				D4166E4221933E650053DA26 /* DisplayNode.swift */,
+				D4166E44219346650053DA26 /* DisplayNode+Subtypes.swift */,
+				D4166E4021933E580053DA26 /* InterfaceState.swift */,
+			);
+			path = DisplayNode;
+			sourceTree = "<group>";
+		};
 		D41AAA2A2187498C00B23325 /* Configs */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +224,7 @@
 			children = (
 				D471E448207AF43800745442 /* TraitCollection.swift */,
 				D41AAA2F21874EA000B23325 /* Transactions */,
+				D4166E3F21933E3D0053DA26 /* DisplayNode */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -494,6 +511,7 @@
 				D41AAA4021884E0700B23325 /* CALayer+_AsyncTransactionContainer.swift in Sources */,
 				D41AAA3121874EDE00B23325 /* _AsyncTransaction.swift in Sources */,
 				D4E40FBC2080DAE800AC9F30 /* RelativeLayoutSpec.swift in Sources */,
+				D4166E4321933E650053DA26 /* DisplayNode.swift in Sources */,
 				D471E4362079ECA400745442 /* WeakLayoutElementToRectMap.swift in Sources */,
 				D41AAA4221884E1500B23325 /* UIView+_AsyncTransactionContainer.swift in Sources */,
 				D471E44D207B051A00745442 /* StackLayoutDefines.swift in Sources */,
@@ -512,10 +530,12 @@
 				D4E4105D2081FC2B00AC9F30 /* RatioLayoutSpec.swift in Sources */,
 				D4E40FB6207FB03800AC9F30 /* BackgroundLayoutSpec.swift in Sources */,
 				D4FF14D12078AF74002AF70D /* AbsoluteLayoutSpec.swift in Sources */,
+				D4166E45219346650053DA26 /* DisplayNode+Subtypes.swift in Sources */,
 				D4FF14CF20787300002AF70D /* AbsoluteLayoutElement.swift in Sources */,
 				D471E44B207B045500745442 /* StackLayoutElement.swift in Sources */,
 				D4FF14C7207858D1002AF70D /* CGRect+Validation.swift in Sources */,
 				D4C1EFAF207C334F0005516A /* WrapperLayoutSpec.swift in Sources */,
+				D4166E4121933E580053DA26 /* InterfaceState.swift in Sources */,
 				D41AAA3C2188498400B23325 /* _AsyncTransactionGroup.swift in Sources */,
 				D41AAA3821875B8300B23325 /* ThreadLocal.swift in Sources */,
 				D4FF14CB20785A6E002AF70D /* SizeRange.swift in Sources */,

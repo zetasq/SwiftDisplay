@@ -12,29 +12,29 @@ import CoreGraphics
 /**
  * Expresses an inclusive range of sizes. Used to provide a simple constraint to layout.
  */
-struct SizeRange: Equatable {
+public struct SizeRange: Equatable {
   
   /**
    * A size range with all dimensions zero.
    */
-  static let zero = SizeRange(minSize: .zero, maxSize: .zero)
+  public static let zero = SizeRange(minSize: .zero, maxSize: .zero)
   
   /**
    * A size range from zero to infinity in both directions.
    */
-  static let unconstrained = SizeRange(
+  public static let unconstrained = SizeRange(
     minSize: CGSize(width: 0, height: 0),
     maxSize: CGSize(width: CGFloat.infinity, height: CGFloat.infinity)
   )
   
-  let minSize: CGSize
+  public let minSize: CGSize
   
-  let maxSize: CGSize
+  public let maxSize: CGSize
   
   /**
    * Creates an ASSizeRange with provided min and max size.
    */
-  init(minSize: CGSize, maxSize: CGSize) {
+  public init(minSize: CGSize, maxSize: CGSize) {
     assert(minSize.width >= 0 && minSize.width <= .greatestFiniteMagnitude)
     assert(minSize.height >= 0 && minSize.height <= .greatestFiniteMagnitude)
     assert(minSize.width <= maxSize.width)
@@ -47,21 +47,21 @@ struct SizeRange: Equatable {
   /**
    * Creates an ASSizeRange with provided size as both min and max.
    */
-  init(exactSize: CGSize) {
+  public init(exactSize: CGSize) {
     self.init(minSize: exactSize, maxSize: exactSize)
   }
   
   /**
    * Returns whether a size range has > 0.1 max width and max height.
    */
-  var hasSignificantArea: Bool {
+  public var hasSignificantArea: Bool {
     return self.maxSize.width > 0.1 && self.maxSize.height > 0.1
   }
   
   /**
    * Clamps the provided CGSize between the [min, max] bounds of this ASSizeRange.
    */
-  func clamp(size: CGSize) -> CGSize {
+  public func clamp(size: CGSize) -> CGSize {
     return CGSize(
       width: max(self.minSize.width, min(self.maxSize.width, size.width)),
       height: max(self.minSize.height, min(self.maxSize.height, size.height))
@@ -93,7 +93,7 @@ struct SizeRange: Equatable {
    * Intersects another size range. If the other size range does not overlap in either dimension, this size range
    * "wins" by returning a single point within its own range that is closest to the non-overlapping range.
    */
-  func intersect(_ sizeRange: SizeRange) -> SizeRange {
+  public func intersect(_ sizeRange: SizeRange) -> SizeRange {
     let widthRange = _Range(minVal: self.minSize.width, maxVal: self.maxSize.width).intersect(_Range(minVal: sizeRange.minSize.width, maxVal: sizeRange.maxSize.width))
     
     let heightRange = _Range(minVal: self.minSize.height, maxVal: self.maxSize.height).intersect(_Range(minVal: sizeRange.minSize.height, maxVal: sizeRange.maxSize.height))
@@ -107,7 +107,7 @@ struct SizeRange: Equatable {
 }
 
 extension SizeRange: CustomDebugStringConvertible {
-  var debugDescription: String {
+  public var debugDescription: String {
     if self.minSize == self.maxSize {
       return String(format: "{{%.*g, %.*g}}", 17, self.minSize.width, 17, self.minSize.height)
     } else {
