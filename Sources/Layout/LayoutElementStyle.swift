@@ -486,8 +486,3 @@ extension LayoutElementStyle: LayoutElementExtensibility {
   
 }
 
-protocol LayoutElementStylability {
-  
-  init(styleBlock: (LayoutElementStyle) -> Void)
-  
-}

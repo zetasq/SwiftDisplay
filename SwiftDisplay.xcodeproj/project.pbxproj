@@ -15,6 +15,19 @@
 		D4166E4121933E580053DA26 /* InterfaceState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4166E4021933E580053DA26 /* InterfaceState.swift */; };
 		D4166E4321933E650053DA26 /* DisplayNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4166E4221933E650053DA26 /* DisplayNode.swift */; };
 		D4166E45219346650053DA26 /* DisplayNode+Subtypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4166E44219346650053DA26 /* DisplayNode+Subtypes.swift */; };
+		D4166E472196589D0053DA26 /* LayoutElementStylability.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4166E462196589D0053DA26 /* LayoutElementStylability.swift */; };
+		D4166E49219667070053DA26 /* ContextTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4166E48219667070053DA26 /* ContextTransitioning.swift */; };
+		D4166E4B21966C310053DA26 /* UIView+AsyncDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4166E4A21966C310053DA26 /* UIView+AsyncDisplay.swift */; };
+		D4166E4D21966C3C0053DA26 /* CALayer+AsyncDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4166E4C21966C3C0053DA26 /* CALayer+AsyncDisplay.swift */; };
+		D4166E4F21967E160053DA26 /* _DisplayLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4166E4E21967E160053DA26 /* _DisplayLayer.swift */; };
+		D4166E512196872C0053DA26 /* CALayerExtendedDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4166E502196872C0053DA26 /* CALayerExtendedDelegate.swift */; };
+		D4166E53219687510053DA26 /* _DisplayLayerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4166E52219687510053DA26 /* _DisplayLayerDelegate.swift */; };
+		D4166E5521968E760053DA26 /* AtomicWeak.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4166E5421968E760053DA26 /* AtomicWeak.swift */; };
+		D4166E572196F9300053DA26 /* _DisplayNodeAccessible.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4166E562196F9300053DA26 /* _DisplayNodeAccessible.swift */; };
+		D4166E592196FA6C0053DA26 /* UIView+_DisplayNodeAccessible.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4166E582196FA6C0053DA26 /* UIView+_DisplayNodeAccessible.swift */; };
+		D4166E5B2196FA7E0053DA26 /* CALayer+_DisplayNodeAccessible.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4166E5A2196FA7E0053DA26 /* CALayer+_DisplayNodeAccessible.swift */; };
+		D4166E5D2196FBC10053DA26 /* WeakProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4166E5C2196FBC10053DA26 /* WeakProxy.swift */; };
+		D4166E5F219700360053DA26 /* DisplayNodeFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4166E5E219700360053DA26 /* DisplayNodeFlags.swift */; };
 		D41AAA3121874EDE00B23325 /* _AsyncTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41AAA3021874EDE00B23325 /* _AsyncTransaction.swift */; };
 		D41AAA332187563B00B23325 /* _AsyncTransactionOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41AAA322187563B00B23325 /* _AsyncTransactionOperation.swift */; };
 		D41AAA3621875B3300B23325 /* Assert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41AAA3521875B3300B23325 /* Assert.swift */; };
@@ -23,6 +36,7 @@
 		D41AAA3E218849D400B23325 /* _AsyncTransactionContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41AAA3D218849D400B23325 /* _AsyncTransactionContainer.swift */; };
 		D41AAA4021884E0700B23325 /* CALayer+_AsyncTransactionContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41AAA3F21884E0700B23325 /* CALayer+_AsyncTransactionContainer.swift */; };
 		D41AAA4221884E1500B23325 /* UIView+_AsyncTransactionContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41AAA4121884E1500B23325 /* UIView+_AsyncTransactionContainer.swift */; };
+		D434B620219B1B2B00EF9027 /* InternalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D434B61F219B1B2B00EF9027 /* InternalHelpers.swift */; };
 		D471E4312079AB9D00745442 /* ObjectDescriptionHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D471E4302079AB9D00745442 /* ObjectDescriptionHelpers.swift */; };
 		D471E4362079ECA400745442 /* WeakLayoutElementToRectMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D471E4352079ECA400745442 /* WeakLayoutElementToRectMap.swift */; };
 		D471E449207AF43800745442 /* TraitCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D471E448207AF43800745442 /* TraitCollection.swift */; };
@@ -82,6 +96,19 @@
 		D4166E4021933E580053DA26 /* InterfaceState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceState.swift; sourceTree = "<group>"; };
 		D4166E4221933E650053DA26 /* DisplayNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayNode.swift; sourceTree = "<group>"; };
 		D4166E44219346650053DA26 /* DisplayNode+Subtypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DisplayNode+Subtypes.swift"; sourceTree = "<group>"; };
+		D4166E462196589D0053DA26 /* LayoutElementStylability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutElementStylability.swift; sourceTree = "<group>"; };
+		D4166E48219667070053DA26 /* ContextTransitioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextTransitioning.swift; sourceTree = "<group>"; };
+		D4166E4A21966C310053DA26 /* UIView+AsyncDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+AsyncDisplay.swift"; sourceTree = "<group>"; };
+		D4166E4C21966C3C0053DA26 /* CALayer+AsyncDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+AsyncDisplay.swift"; sourceTree = "<group>"; };
+		D4166E4E21967E160053DA26 /* _DisplayLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _DisplayLayer.swift; sourceTree = "<group>"; };
+		D4166E502196872C0053DA26 /* CALayerExtendedDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerExtendedDelegate.swift; sourceTree = "<group>"; };
+		D4166E52219687510053DA26 /* _DisplayLayerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _DisplayLayerDelegate.swift; sourceTree = "<group>"; };
+		D4166E5421968E760053DA26 /* AtomicWeak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtomicWeak.swift; sourceTree = "<group>"; };
+		D4166E562196F9300053DA26 /* _DisplayNodeAccessible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _DisplayNodeAccessible.swift; sourceTree = "<group>"; };
+		D4166E582196FA6C0053DA26 /* UIView+_DisplayNodeAccessible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+_DisplayNodeAccessible.swift"; sourceTree = "<group>"; };
+		D4166E5A2196FA7E0053DA26 /* CALayer+_DisplayNodeAccessible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+_DisplayNodeAccessible.swift"; sourceTree = "<group>"; };
+		D4166E5C2196FBC10053DA26 /* WeakProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakProxy.swift; sourceTree = "<group>"; };
+		D4166E5E219700360053DA26 /* DisplayNodeFlags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayNodeFlags.swift; sourceTree = "<group>"; };
 		D41AAA2B218749B200B23325 /* TargetCommon.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = TargetCommon.xcconfig; sourceTree = "<group>"; };
 		D41AAA2C218749B300B23325 /* Test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
 		D41AAA2D218749B300B23325 /* Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Framework.xcconfig; sourceTree = "<group>"; };
@@ -94,6 +121,7 @@
 		D41AAA3D218849D400B23325 /* _AsyncTransactionContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _AsyncTransactionContainer.swift; sourceTree = "<group>"; };
 		D41AAA3F21884E0700B23325 /* CALayer+_AsyncTransactionContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+_AsyncTransactionContainer.swift"; sourceTree = "<group>"; };
 		D41AAA4121884E1500B23325 /* UIView+_AsyncTransactionContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+_AsyncTransactionContainer.swift"; sourceTree = "<group>"; };
+		D434B61F219B1B2B00EF9027 /* InternalHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalHelpers.swift; sourceTree = "<group>"; };
 		D471E4302079AB9D00745442 /* ObjectDescriptionHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDescriptionHelpers.swift; sourceTree = "<group>"; };
 		D471E4352079ECA400745442 /* WeakLayoutElementToRectMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakLayoutElementToRectMap.swift; sourceTree = "<group>"; };
 		D471E448207AF43800745442 /* TraitCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraitCollection.swift; sourceTree = "<group>"; };
@@ -180,8 +208,18 @@
 			isa = PBXGroup;
 			children = (
 				D4166E4221933E650053DA26 /* DisplayNode.swift */,
+				D4166E5E219700360053DA26 /* DisplayNodeFlags.swift */,
+				D4166E4A21966C310053DA26 /* UIView+AsyncDisplay.swift */,
+				D4166E4C21966C3C0053DA26 /* CALayer+AsyncDisplay.swift */,
 				D4166E44219346650053DA26 /* DisplayNode+Subtypes.swift */,
 				D4166E4021933E580053DA26 /* InterfaceState.swift */,
+				D4166E48219667070053DA26 /* ContextTransitioning.swift */,
+				D4166E4E21967E160053DA26 /* _DisplayLayer.swift */,
+				D4166E52219687510053DA26 /* _DisplayLayerDelegate.swift */,
+				D4166E502196872C0053DA26 /* CALayerExtendedDelegate.swift */,
+				D4166E562196F9300053DA26 /* _DisplayNodeAccessible.swift */,
+				D4166E582196FA6C0053DA26 /* UIView+_DisplayNodeAccessible.swift */,
+				D4166E5A2196FA7E0053DA26 /* CALayer+_DisplayNodeAccessible.swift */,
 			);
 			path = DisplayNode;
 			sourceTree = "<group>";
@@ -219,6 +257,14 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		D45868CD21A0135F0033FBE9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D434B61F219B1B2B00EF9027 /* InternalHelpers.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		D471E447207AF42600745442 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
@@ -237,21 +283,16 @@
 			path = Private;
 			sourceTree = "<group>";
 		};
-		D4C1EF9E207A70F60005516A /* DataStructure */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DataStructure;
-			sourceTree = "<group>";
-		};
-		D4C1EFA7207BBD6F0005516A /* Thread */ = {
+		D4C1EFA7207BBD6F0005516A /* SupportingTypes */ = {
 			isa = PBXGroup;
 			children = (
 				D4C1EFA8207BBD820005516A /* Lock.swift */,
 				D4C1EFAA207BBDFE0005516A /* Atomic.swift */,
+				D4166E5421968E760053DA26 /* AtomicWeak.swift */,
 				D41AAA3721875B8300B23325 /* ThreadLocal.swift */,
+				D4166E5C2196FBC10053DA26 /* WeakProxy.swift */,
 			);
-			path = Thread;
+			path = SupportingTypes;
 			sourceTree = "<group>";
 		};
 		D4E40FB4207FA84300AC9F30 /* LayoutSpec */ = {
@@ -299,8 +340,8 @@
 				D4FF14772077A671002AF70D /* SwiftDisplay.h */,
 				D4FF14782077A671002AF70D /* Info.plist */,
 				D41AAA3421875AF700B23325 /* Base */,
-				D4C1EFA7207BBD6F0005516A /* Thread */,
-				D4C1EF9E207A70F60005516A /* DataStructure */,
+				D4C1EFA7207BBD6F0005516A /* SupportingTypes */,
+				D45868CD21A0135F0033FBE9 /* Utils */,
 				D4B4A9E9207A50FA00A18EE3 /* Private */,
 				D4FF14C12077B941002AF70D /* Layout */,
 				D471E447207AF42600745442 /* Detail */,
@@ -345,6 +386,7 @@
 				D4B4A9E52079128100A18EE3 /* LayoutElement.swift */,
 				D4C1EFA5207BB0DC0005516A /* LayoutElementContext.swift */,
 				D4C1EFA1207BA7910005516A /* LayoutElementStyle.swift */,
+				D4166E462196589D0053DA26 /* LayoutElementStylability.swift */,
 				D471E44C207B051A00745442 /* StackLayoutDefines.swift */,
 				D471E44A207B045500745442 /* StackLayoutElement.swift */,
 				D4E40FB4207FA84300AC9F30 /* LayoutSpec */,
@@ -510,7 +552,10 @@
 				D4B4A9E8207A4A4600A18EE3 /* CoreGraphics+Util.swift in Sources */,
 				D41AAA4021884E0700B23325 /* CALayer+_AsyncTransactionContainer.swift in Sources */,
 				D41AAA3121874EDE00B23325 /* _AsyncTransaction.swift in Sources */,
+				D4166E5F219700360053DA26 /* DisplayNodeFlags.swift in Sources */,
 				D4E40FBC2080DAE800AC9F30 /* RelativeLayoutSpec.swift in Sources */,
+				D4166E472196589D0053DA26 /* LayoutElementStylability.swift in Sources */,
+				D4166E572196F9300053DA26 /* _DisplayNodeAccessible.swift in Sources */,
 				D4166E4321933E650053DA26 /* DisplayNode.swift in Sources */,
 				D471E4362079ECA400745442 /* WeakLayoutElementToRectMap.swift in Sources */,
 				D41AAA4221884E1500B23325 /* UIView+_AsyncTransactionContainer.swift in Sources */,
@@ -522,7 +567,9 @@
 				D4FF14C920785A32002AF70D /* LayoutSize.swift in Sources */,
 				D4C1EFA6207BB0DC0005516A /* LayoutElementContext.swift in Sources */,
 				D4C1EFA2207BA7910005516A /* LayoutElementStyle.swift in Sources */,
+				D434B620219B1B2B00EF9027 /* InternalHelpers.swift in Sources */,
 				D4B4A9E62079128100A18EE3 /* LayoutElement.swift in Sources */,
+				D4166E512196872C0053DA26 /* CALayerExtendedDelegate.swift in Sources */,
 				D4FF14CD20785A91002AF70D /* LayoutElementSize.swift in Sources */,
 				D4E4105F2082098600AC9F30 /* StackLayoutSpec.swift in Sources */,
 				D4FF14C52077BFDB002AF70D /* Dimension.swift in Sources */,
@@ -531,20 +578,29 @@
 				D4E40FB6207FB03800AC9F30 /* BackgroundLayoutSpec.swift in Sources */,
 				D4FF14D12078AF74002AF70D /* AbsoluteLayoutSpec.swift in Sources */,
 				D4166E45219346650053DA26 /* DisplayNode+Subtypes.swift in Sources */,
+				D4166E4B21966C310053DA26 /* UIView+AsyncDisplay.swift in Sources */,
 				D4FF14CF20787300002AF70D /* AbsoluteLayoutElement.swift in Sources */,
 				D471E44B207B045500745442 /* StackLayoutElement.swift in Sources */,
 				D4FF14C7207858D1002AF70D /* CGRect+Validation.swift in Sources */,
 				D4C1EFAF207C334F0005516A /* WrapperLayoutSpec.swift in Sources */,
 				D4166E4121933E580053DA26 /* InterfaceState.swift in Sources */,
 				D41AAA3C2188498400B23325 /* _AsyncTransactionGroup.swift in Sources */,
+				D4166E49219667070053DA26 /* ContextTransitioning.swift in Sources */,
+				D4166E4F21967E160053DA26 /* _DisplayLayer.swift in Sources */,
+				D4166E4D21966C3C0053DA26 /* CALayer+AsyncDisplay.swift in Sources */,
 				D41AAA3821875B8300B23325 /* ThreadLocal.swift in Sources */,
 				D4FF14CB20785A6E002AF70D /* SizeRange.swift in Sources */,
 				D4166E3E2191E5C80053DA26 /* _AsyncTransactionQueuePool.swift in Sources */,
+				D4166E5D2196FBC10053DA26 /* WeakProxy.swift in Sources */,
 				D4FF14C32077B955002AF70D /* Layout.swift in Sources */,
+				D4166E5B2196FA7E0053DA26 /* CALayer+_DisplayNodeAccessible.swift in Sources */,
 				D4E410282081AE7D00AC9F30 /* OverlayLayoutSpec.swift in Sources */,
 				D4C1EFAD207C2E6A0005516A /* LayoutSpec.swift in Sources */,
+				D4166E592196FA6C0053DA26 /* UIView+_DisplayNodeAccessible.swift in Sources */,
 				D4C1EFA4207BAF0A0005516A /* LayoutElementStyleExtensions.swift in Sources */,
 				D471E4312079AB9D00745442 /* ObjectDescriptionHelpers.swift in Sources */,
+				D4166E5521968E760053DA26 /* AtomicWeak.swift in Sources */,
+				D4166E53219687510053DA26 /* _DisplayLayerDelegate.swift in Sources */,
 				D41AAA3621875B3300B23325 /* Assert.swift in Sources */,
 				D4C1EFAB207BBDFE0005516A /* Atomic.swift in Sources */,
 			);

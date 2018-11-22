@@ -24,7 +24,19 @@ import UIKit
  * display.
  *
  */
-open class DisplayNode {
+open class DisplayNode: NSObject {
+  
+  // MARK: - Internal properties
+  
+  // Thread safe way to access the bounds of the node
+  internal var threadSafeBounds: CGRect {
+    get {
+      fatalError()
+    }
+    set {
+      fatalError()
+    }
+  }
   
   // MARK: - Initializing a node object
 
@@ -34,7 +46,7 @@ open class DisplayNode {
    * @return An ASDisplayNode instance whose view will be a subclass that enables asynchronous rendering, and passes
    * through -layout and touch handling methods.
    */
-  public init() {
+  public override init() {
     fatalError()
   }
   
@@ -64,6 +76,17 @@ open class DisplayNode {
     fatalError()
   }
   
+  // MARK: - Internal methods
+  /**
+   * Called whenever the node needs to layout its subnodes and, if it's already loaded, its subviews. Executes the layout pass for the node
+   *
+   * This method is thread-safe but asserts thread affinity.
+   */
+  internal func __layout() {
+    fatalError()
+  }
+  
+  // MARK: - Loading config
   /**
    * @abstract Add a block of work to be performed on the main thread when the node's view or layer is loaded. Thread safe.
    * @warning Be careful not to retain self in `body`. Change the block parameter list to `^(MYCustomNode *self) {}` if you
@@ -1100,7 +1123,7 @@ extension DisplayNode {
 // MARK: - UIViewBridgeAccessibility
 extension DisplayNode {
   
-  public final var isAccessibilityElement: Bool {
+  open override var isAccessibilityElement: Bool {
     get {
       fatalError()
     }
@@ -1109,7 +1132,7 @@ extension DisplayNode {
     }
   }
   
-  public final var accessibilityLabel: String? {
+  open override var accessibilityLabel: String? {
     get {
       fatalError()
     }
@@ -1118,7 +1141,7 @@ extension DisplayNode {
     }
   }
   
-  public final var accessibilityAttributedLabel: NSAttributedString? {
+  open override var accessibilityAttributedLabel: NSAttributedString? {
     get {
       fatalError()
     }
@@ -1127,7 +1150,7 @@ extension DisplayNode {
     }
   }
   
-  public final var accessibilityHint: String? {
+  open override var accessibilityHint: String? {
     get {
       fatalError()
     }
@@ -1136,7 +1159,7 @@ extension DisplayNode {
     }
   }
   
-  public final var accessibilityAttributedHint: NSAttributedString? {
+  open override var accessibilityAttributedHint: NSAttributedString? {
     get {
       fatalError()
     }
@@ -1145,7 +1168,7 @@ extension DisplayNode {
     }
   }
   
-  public final var accessibilityValue: String? {
+  open override var accessibilityValue: String? {
     get {
       fatalError()
     }
@@ -1154,7 +1177,7 @@ extension DisplayNode {
     }
   }
   
-  public final var accessibilityAttributedValue: NSAttributedString? {
+  open override var accessibilityAttributedValue: NSAttributedString? {
     get {
       fatalError()
     }
@@ -1163,7 +1186,7 @@ extension DisplayNode {
     }
   }
   
-  public final var accessibilityTraits: UIAccessibilityTraits {
+  open override var accessibilityTraits: UIAccessibilityTraits {
     get {
       fatalError()
     }
@@ -1172,7 +1195,7 @@ extension DisplayNode {
     }
   }
   
-  public final var accessibilityFrame: CGRect {
+  open override var accessibilityFrame: CGRect {
     get {
       fatalError()
     }
@@ -1181,7 +1204,7 @@ extension DisplayNode {
     }
   }
   
-  public final var accessibilityPath: UIBezierPath? {
+  open override var accessibilityPath: UIBezierPath? {
     get {
       fatalError()
     }
@@ -1190,7 +1213,7 @@ extension DisplayNode {
     }
   }
   
-  public final var accessibilityActivationPoint: CGPoint {
+  open override var accessibilityActivationPoint: CGPoint {
     get {
       fatalError()
     }
@@ -1199,7 +1222,7 @@ extension DisplayNode {
     }
   }
   
-  public final var accessibilityLanguage: String? {
+  open override var accessibilityLanguage: String? {
     get {
       fatalError()
     }
@@ -1208,7 +1231,7 @@ extension DisplayNode {
     }
   }
   
-  public final var accessibilityElementsHidden: Bool {
+  open override var accessibilityElementsHidden: Bool {
     get {
       fatalError()
     }
@@ -1217,7 +1240,7 @@ extension DisplayNode {
     }
   }
   
-  public final var accessibilityViewIsModal: Bool {
+  open override var accessibilityViewIsModal: Bool {
     get {
       fatalError()
     }
@@ -1226,7 +1249,7 @@ extension DisplayNode {
     }
   }
   
-  public final var shouldGroupAccessibilityChildren: Bool {
+  open override var shouldGroupAccessibilityChildren: Bool {
     get {
       fatalError()
     }
@@ -1235,7 +1258,7 @@ extension DisplayNode {
     }
   }
   
-  public final var accessibilityNavigationStyle: UIAccessibilityNavigationStyle {
+  open override var accessibilityNavigationStyle: UIAccessibilityNavigationStyle {
     get {
       fatalError()
     }
@@ -1252,4 +1275,220 @@ extension DisplayNode {
       fatalError()
     }
   }
+}
+
+// MARK: - LayoutElement
+//extension DisplayNode: LayoutElement {
+//
+//}
+
+// MARK: - LayoutElementStylability
+//extension DisplayNode: LayoutElementStylability {
+//  
+//}
+
+// MARK: - Managing dimensions
+extension DisplayNode {
+  
+  /**
+   * @abstract Provides a way to declare a block to provide an ASLayoutSpec without having to subclass ASDisplayNode and
+   * implement layoutSpecThatFits:
+   *
+   * @return A block that takes a constrainedSize ASSizeRange argument, and must return an ASLayoutSpec that includes all
+   * of the subnodes to position in the layout. This input-output relationship is identical to the subclass override
+   * method -layoutSpecThatFits:
+   *
+   * @warning Subclasses that implement -layoutSpecThatFits: must not also use .layoutSpecBlock. Doing so will trigger
+   * an exception. A future version of the framework may support using both, calling them serially, with the
+   * .layoutSpecBlock superseding any values set by the method override.
+   *
+   * @code ^ASLayoutSpec *(__kindof ASDisplayNode * _Nonnull node, ASSizeRange constrainedSize) {};
+   */
+  public final var layoutSpecBlock: LayoutSpecBlock {
+    get {
+      fatalError()
+    }
+    set {
+      fatalError()
+    }
+  }
+  
+  /**
+   * @abstract Return the calculated size.
+   *
+   * @discussion Ideal for use by subclasses in -layout, having already prompted their subnodes to calculate their size by
+   * calling -layoutThatFits: on them in -calculateLayoutThatFits.
+   *
+   * @return Size already calculated by -calculateLayoutThatFits:.
+   *
+   * @warning Subclasses must not override this; it returns the last cached measurement and is never expensive.
+   */
+  public final var calculatedSize: CGSize {
+    fatalError()
+  }
+  
+  /**
+   * @abstract Return the constrained size range used for calculating layout.
+   *
+   * @return The minimum and maximum constrained sizes used by calculateLayoutThatFits:.
+   */
+  public final var constrainedSizeForCalculatedLayout: SizeRange {
+    fatalError()
+  }
+  
+}
+
+// MARK: Layout transition
+extension DisplayNode {
+  
+  /**
+   * @abstract The amount of time it takes to complete the default transition animation. Default is 0.2.
+   */
+  public final var defaultLayoutTransitionDuration: TimeInterval {
+    get {
+      fatalError()
+    }
+    set {
+      fatalError()
+    }
+  }
+  
+  /**
+   * @abstract The amount of time (measured in seconds) to wait before beginning the default transition animation.
+   *           Default is 0.0.
+   */
+  public final var defaultLayoutTransitionDelay: TimeInterval {
+    get {
+      fatalError()
+    }
+    set {
+      fatalError()
+    }
+  }
+  
+  /**
+   * @abstract A mask of options indicating how you want to perform the default transition animations.
+   *           For a list of valid constants, see UIViewAnimationOptions.
+   */
+  public final var defaultLayoutTransitionOptions: UIView.AnimationOptions {
+    get {
+      fatalError()
+    }
+    set {
+      fatalError()
+    }
+  }
+  
+  /**
+   * @discussion A place to perform your animation. New nodes have been inserted here. You can also use this time to re-order the hierarchy.
+   */
+  open func animateLayoutTransition(_ context: ContextTransitioning) {
+    fatalError()
+  }
+  
+  /**
+   * @discussion A place to clean up your nodes after the transition
+   */
+  open func didCompleteLayoutTransition(_ context: ContextTransitioning) {
+    fatalError()
+  }
+  
+  /**
+   * @abstract Transitions the current layout with a new constrained size. Must be called on main thread.
+   *
+   * @param animated Animation is optional, but will still proceed through your `animateLayoutTransition` implementation with `isAnimated == NO`.
+   * @param shouldMeasureAsync Measure the layout asynchronously.
+   * @param completion Optional completion block called only if a new layout is calculated.
+   * It is called on main, right after the measurement and before -animateLayoutTransition:.
+   *
+   * @discussion If the passed constrainedSize is the the same as the node's current constrained size, this method is noop. If passed YES to shouldMeasureAsync it's guaranteed that measurement is happening on a background thread, otherwise measaurement will happen on the thread that the method was called on. The measurementCompletion callback is always called on the main thread right after the measurement and before -animateLayoutTransition:.
+   *
+   * @see animateLayoutTransition:
+   *
+   */
+  public final func transitionLayout(withSizeRange constrainedSize: SizeRange,
+                                     animated: Bool,
+                                     shouldMeasureAsync: Bool,
+                                     measurementCompletion: (() -> Void)?) {
+    fatalError()
+  }
+  
+  /**
+   * @abstract Invalidates the layout and begins a relayout of the node with the current `constrainedSize`. Must be called on main thread.
+   *
+   * @discussion It is called right after the measurement and before -animateLayoutTransition:.
+   *
+   * @param animated Animation is optional, but will still proceed through your `animateLayoutTransition` implementation with `isAnimated == NO`.
+   * @param shouldMeasureAsync Measure the layout asynchronously.
+   * @param completion Optional completion block called only if a new layout is calculated.
+   *
+   * @see animateLayoutTransition:
+   *
+   */
+  public final func transitionLayout(withAnimation animated: Bool,
+                                     shouldMeasureAsync: Bool,
+                                     measurementCompletion: (() -> Void)?) {
+    fatalError()
+  }
+  
+  /**
+   * @abstract Cancels all performing layout transitions. Can be called on any thread.
+   */
+  public final func cancelLayoutTransition() {
+    fatalError()
+  }
+}
+
+// MARK: Automatic subnode management
+extension DisplayNode {
+  
+  /**
+   * @abstract A boolean that shows whether the node automatically inserts and removes nodes based on the presence or
+   * absence of the node and its subnodes is completely determined in its layoutSpecThatFits: method.
+   *
+   * @discussion If flag is YES the node no longer require addSubnode: or removeFromSupernode method calls. The presence
+   * or absence of subnodes is completely determined in its layoutSpecThatFits: method.
+   */
+  public final var automaticallyManagesSubnodes: Bool {
+    get {
+      fatalError()
+    }
+    set {
+      fatalError()
+    }
+  }
+  
+}
+
+// MARK: - _AsyncTransactionContainer
+extension DisplayNode: _AsyncTransactionContainer {
+  var isAsyncTransactionContainer: Bool {
+    get {
+      fatalError()
+    }
+    set {
+      fatalError()
+    }
+  }
+  
+  var asyncTransactionContainerState: _AsyncTransactionContainerState {
+    fatalError()
+  }
+  
+  func cancelAsyncTransactions() {
+    fatalError()
+  }
+  
+  var currentAsyncTransaction: _AsyncTransaction? {
+    get {
+      fatalError()
+
+    }
+    set {
+      fatalError()
+
+    }
+  }
+  
+  
 }

@@ -12,7 +12,7 @@ import CoreGraphics
 /**
  * A node in the layout tree that represents the size and position of the object that created it (ASLayoutElement).
  */
-final class Layout {
+public final class Layout {
     
 //  /**
 //   * Set to YES to tell all ASLayout instances to retain their sublayout elements. Defaults to NO.
@@ -240,7 +240,7 @@ final class Layout {
 
 extension Layout: Equatable {
   
-  static func == (lhs: Layout, rhs: Layout) -> Bool {
+  public static func == (lhs: Layout, rhs: Layout) -> Bool {
     guard lhs.size == rhs.size else {
       return false
     }
