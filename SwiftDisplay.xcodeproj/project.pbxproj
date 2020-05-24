@@ -36,7 +36,6 @@
 		D41AAA3E218849D400B23325 /* _AsyncTransactionContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41AAA3D218849D400B23325 /* _AsyncTransactionContainer.swift */; };
 		D41AAA4021884E0700B23325 /* CALayer+_AsyncTransactionContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41AAA3F21884E0700B23325 /* CALayer+_AsyncTransactionContainer.swift */; };
 		D41AAA4221884E1500B23325 /* UIView+_AsyncTransactionContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41AAA4121884E1500B23325 /* UIView+_AsyncTransactionContainer.swift */; };
-		D434B620219B1B2B00EF9027 /* InternalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D434B61F219B1B2B00EF9027 /* InternalHelpers.swift */; };
 		D471E4312079AB9D00745442 /* ObjectDescriptionHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D471E4302079AB9D00745442 /* ObjectDescriptionHelpers.swift */; };
 		D471E4362079ECA400745442 /* WeakLayoutElementToRectMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D471E4352079ECA400745442 /* WeakLayoutElementToRectMap.swift */; };
 		D471E449207AF43800745442 /* TraitCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D471E448207AF43800745442 /* TraitCollection.swift */; };
@@ -121,7 +120,6 @@
 		D41AAA3D218849D400B23325 /* _AsyncTransactionContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _AsyncTransactionContainer.swift; sourceTree = "<group>"; };
 		D41AAA3F21884E0700B23325 /* CALayer+_AsyncTransactionContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+_AsyncTransactionContainer.swift"; sourceTree = "<group>"; };
 		D41AAA4121884E1500B23325 /* UIView+_AsyncTransactionContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+_AsyncTransactionContainer.swift"; sourceTree = "<group>"; };
-		D434B61F219B1B2B00EF9027 /* InternalHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalHelpers.swift; sourceTree = "<group>"; };
 		D471E4302079AB9D00745442 /* ObjectDescriptionHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDescriptionHelpers.swift; sourceTree = "<group>"; };
 		D471E4352079ECA400745442 /* WeakLayoutElementToRectMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakLayoutElementToRectMap.swift; sourceTree = "<group>"; };
 		D471E448207AF43800745442 /* TraitCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraitCollection.swift; sourceTree = "<group>"; };
@@ -260,7 +258,7 @@
 		D45868CD21A0135F0033FBE9 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				D434B61F219B1B2B00EF9027 /* InternalHelpers.swift */,
+				D4B4A9EA207A510600A18EE3 /* InternalHelpers.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -273,14 +271,6 @@
 				D4166E3F21933E3D0053DA26 /* DisplayNode */,
 			);
 			path = Detail;
-			sourceTree = "<group>";
-		};
-		D4B4A9E9207A50FA00A18EE3 /* Private */ = {
-			isa = PBXGroup;
-			children = (
-				D4B4A9EA207A510600A18EE3 /* InternalHelpers.swift */,
-			);
-			path = Private;
 			sourceTree = "<group>";
 		};
 		D4C1EFA7207BBD6F0005516A /* SupportingTypes */ = {
@@ -342,7 +332,6 @@
 				D41AAA3421875AF700B23325 /* Base */,
 				D4C1EFA7207BBD6F0005516A /* SupportingTypes */,
 				D45868CD21A0135F0033FBE9 /* Utils */,
-				D4B4A9E9207A50FA00A18EE3 /* Private */,
 				D4FF14C12077B941002AF70D /* Layout */,
 				D471E447207AF42600745442 /* Detail */,
 			);
@@ -567,7 +556,6 @@
 				D4FF14C920785A32002AF70D /* LayoutSize.swift in Sources */,
 				D4C1EFA6207BB0DC0005516A /* LayoutElementContext.swift in Sources */,
 				D4C1EFA2207BA7910005516A /* LayoutElementStyle.swift in Sources */,
-				D434B620219B1B2B00EF9027 /* InternalHelpers.swift in Sources */,
 				D4B4A9E62079128100A18EE3 /* LayoutElement.swift in Sources */,
 				D4166E512196872C0053DA26 /* CALayerExtendedDelegate.swift in Sources */,
 				D4FF14CD20785A91002AF70D /* LayoutElementSize.swift in Sources */,
